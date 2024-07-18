@@ -1,0 +1,22 @@
+﻿@model List<W3_D2_01.Models.Student>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var st in Model){
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                <td>@st.Age</td>
+                <td>@st.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,21 @@
+﻿@model W3_D2_01.Models.Student
+<h1>Enter Student details</h1>
+<form asp-action="Index" method="post">
+    <div>
+        <label>Student Name : </label>
+        <input asp-for="Name"/>
+    </div>
+    <br />
+    <div>
+        <label>Student Age : </label>
+        <input asp-for="Age"/>
+    </div>
+    <br />
+    <div>
+        <label>Student Gender : </label>
+        <input asp-for="Gender"/>
+    </div>
+    <br />
+    <button type="submit">Submit</button>
+
+</form>
